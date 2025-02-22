@@ -1,13 +1,14 @@
+# About the project & repository
+
 AI Trends Analysis is a project that collects and analyzes AI-related information from multiple sources, including Wikipedia, research papers, and Reddit discussions. The goal is to track trends in artificial intelligence, identify key topics, and gain insights into the evolution of AI research, public discussions, and technological advancements.
 
-# About the project & repository
+## Repository Content and Structure
 
 Data collection scripts for gathering AI-related content from Wikipedia, research papers, and Reddit.
 Preprocessing and cleaning methods to standardize and structure the data.
 Exploratory data analysis (EDA) to uncover trends, key discussions, and topic distributions.
 Visualization tools to present findings through charts, graphs, and reports.
 
-## Repository Structure
 This repository is organized as follows:
 
 - **`data_collection/`**: This directory contains scripts that handle the collection of AI-related data from various sources.
