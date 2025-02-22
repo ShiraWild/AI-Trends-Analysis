@@ -1,8 +1,8 @@
-# About the project & repository
+# About AI Trends Analysis
 
 AI Trends Analysis is a project that collects and analyzes AI-related information from multiple sources, including Wikipedia, research papers, and Reddit discussions. The goal is to track trends in artificial intelligence, identify key topics, and gain insights into the evolution of AI research, public discussions, and technological advancements.
 
-## Repository Content and Structure
+# Repository Content and Structure
 
 Data collection scripts for gathering AI-related content from Wikipedia, research papers, and Reddit.
 Preprocessing and cleaning methods to standardize and structure the data.
