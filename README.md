@@ -9,18 +9,26 @@
      - `reddit_data.ipynb`: Fetches posts from AI-related subreddits using the Reddit API.
      - `semantic_scholar_data.ipynb`: Retrieves metadata for research papers on AI topics using the Semantic Scholar API.
      - `wikipedia_data.ipynb`: Collects daily pageviews and metadata for AI-related topics via the Wikimedia API.
-
-3. **`visualizations/`**
-   - Contains visualizations generated during analysis.
-   - Includes plots in both HTML and PNG formats for easier sharing and embedding.
-
 ---
 ## Collected Data - Reddit, Wikipedia and Scholar
 
-The data is too large to upload it to git repository. To explore the data itself, you can find it in this drive directory with read access through this link:
-https://drive.google.com/drive/folders/1RuXT5ZJHMu8nvCY58EcIzrAs_mulu3Co?usp=drive_link
+Due to the large size of the data, it has not been uploaded to this Git repository. To explore the data, please use the following link to access it on Google Drive with read-only permissions:
+
+[Access the data](https://drive.google.com/drive/folders/1RuXT5ZJHMu8nvCY58EcIzrAs_mulu3Co?usp=drive_link)
+
+## Visualization - HTML and PNG Files
+
+The visualizations generated during the analysis are too large to be stored in the Git repository. To view the HTML files and visualizations, you can find them in the following Google Drive directory with read-only access:
+
+[Access the visualizations](https://drive.google.com/drive/folders/1MYEQPo4IRpkbhkLq6mpgN6e5Uv_vWGCS?usp=sharing)
+
 
 ## File Descriptions
+The data is too large to upload. To see the html files and the visualizations you can find it in the drive directory with read access through this link:
+https://drive.google.com/drive/folders/1MYEQPo4IRpkbhkLq6mpgN6e5Uv_vWGCS?usp=sharing
+
+   - Contains visualizations generated during analysis.
+   - Includes plots in both HTML and PNG formats for easier sharing and embedding.
 
 ### **Data Collection Scripts**
 
