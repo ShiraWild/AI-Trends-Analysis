@@ -16,7 +16,7 @@
      - `semantic_scholar_data.csv`: Metadata of research papers.
      - `wikipedia_data.csv`: Daily pageviews and metadata for Wikipedia topics.
 
-4. **`visualizations/plots/`**
+4. **`visualizations/`**
    - Contains visualizations generated during analysis.
    - Includes plots in both HTML and PNG formats for easier sharing and embedding.
 
