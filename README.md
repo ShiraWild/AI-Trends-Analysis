@@ -1,4 +1,4 @@
-### **AI Trends Analysis**
+### **AI Trends Analysis Project 🚀📊🤖**
 
 1. **`data_analysis/`**
    - Contains the analysis script `AITrendsAnalysis_analysis.ipynb`.
