@@ -1,98 +1,60 @@
-# About AI Trends Analysis
+# AI Trend Analysis Project
 
-AI Trends Analysis is a project that collects and analyzes AI-related information from multiple sources, including Wikipedia, research papers, and Reddit discussions. The goal is to track trends in artificial intelligence, identify key topics, and gain insights into the evolution of AI research, public discussions, and technological advancements.
+## Overview
+This project aims to analyze trends in artificial intelligence (AI), machine learning (ML), and related fields by collecting data from multiple sources such as Reddit, Semantic Scholar, and Wikipedia. The goal is to provide insights into public discussions, research developments, and topic popularity over time.
 
-# Repository Content and Structure
+---
 
-Data collection scripts for gathering AI-related content from Wikipedia, research papers, and Reddit.
-Preprocessing and cleaning methods to standardize and structure the data.
-Exploratory data analysis (EDA) to uncover trends, key discussions, and topic distributions.
-Visualization tools to present findings through charts, graphs, and reports.
+## Project Files
 
-This repository is organized as follows:
+### 1. **Reddit Data Collection (`reddit_data.ipynb`)**
+- **Purpose**: Collects posts from various AI-related subreddits using the Reddit API.
+- **Details**:
+  - Monitors subreddits such as *MachineLearning*, *ArtificialIntelligence*, *datascience*, *robotics*, and more.
+  - Fetches posts sorted by "new" to ensure the dataset contains the latest discussions.
+  - Metadata collected includes:
+    - `title`: Title of the Reddit post.
+    - `url`: URL of the post.
+    - `score`: Net score (upvotes minus downvotes).
+    - `num_awards`: Total number of awards received.
+    - `created_utc`: Timestamp of post creation.
+    - `num_comments`: Number of comments on the post.
+    - `subreddit`: Subreddit name.
+    - `text`: Body of the post (if available).
+- **Output**: A CSV file containing the collected Reddit data.
 
-- **`data_collection/`**: This directory contains scripts that handle the collection of AI-related data from various sources.
-  - **`Reddit_data.ipynb`**: A notebook for collecting data from Reddit.
-  - **`semantic_scholar_data.ipynb`**: A notebook for collecting data from Semantic Scholar.
-  - **`wikipedia_data.ipynb`**: A notebook for collecting data from Wikipedia.
+---
 
+### 2. **Semantic Scholar Data Collection (`semantic_scholar_data.ipynb`)**
+- **Purpose**: Retrieves metadata for research papers on AI topics using the Semantic Scholar API.
+- **Details**:
+  - Queries papers published between 2014 and 2024 across topics like Deep Learning, NLP, Computer Vision, Reinforcement Learning, Generative AI, and more.
+  - Metadata collected includes:
+    - `title`: Paper title.
+    - `authors`: List of authors' names.
+    - `year`: Publication year.
+    - `citations`: Citation count.
+    - `abstract`: Summary of the paper.
+    - `venue`: Journal or conference name.
+    - `url`: Link to the paper on Semantic Scholar.
+- **Output**: A CSV file containing research paper metadata for trend analysis in AI research.
 
+---
 
-# 📊 Data Sources & Collection
-The data is collected from three primary sources:
-
-## 1️⃣ Wikipedia
-Extracts AI-related pages, including machine learning, neural networks, AI ethics, and notable researchers.
-Uses web scraping or Wikipedia API to retrieve text and metadata.
-## 2️⃣ Research Papers
-Collects papers from sources like arXiv, Semantic Scholar, or OpenReview.
-Extracts metadata (titles, abstracts, keywords, publication dates).
-## 3️⃣ Reddit Discussions
-Retrieves AI-related posts from various subreddits using Reddit’s API (asyncpraw).
-List of subreddits included in data collection:
-MachineLearning, ArtificialIntelligence, DeepLearning, AIethics, datascience, technology, Futurology, and more.
-Filters posts by recency and engagement (e.g., upvotes, comments).
-
-# 📑 Metadata Collected
-
-## Wikipedia
-Each row represents Wikipedia page page views for a specific date, that was found by following Wikipedia’s internal links from the manually defined source Wikipedia pages (AI-related). 
-
-article: The Wikipedia page title.
-date: The date of recorded pageviews in YYYYMMDD format.
-views: The number of pageviews for that day.
-weekday: The day of the week corresponding to the date.
-page_id: A unique identifier for the Wikipedia page.
-creation_date: The date when the Wikipedia page was first created.
-last_modified: The last time the page was updated.
-page_url: The direct link to the Wikipedia page.
-description: A short text snippet extracted from the page’s introduction.
-category: The first Wikipedia category assigned to the page.
-subcategory: The second Wikipedia category (if available)
-
-## Reddit
-Each row represents a post in reddit, that belongs to one of the manually defined subreddits (related to AI).
-
-title: post title
-url: link to the reddit post 
-score: Upvote score - Downvote score (unfourtunately it's not possible to extrat the upvote, downvote scores itself by Reddit API)
-num_awards: number of awards received
-created_utc: date and time of post creation
-num_comments: number of comments on the post
-subreddit: name of the subreddit
-text: full post content (if available)
-
-## Research Papers
-Each row represents a research paper related to manually predefined AI topics.
-title
-author
-years
-citations
-abstract 
-venue
-url
-
-# 🚀 Usage & Analysis
-1. Data Collection
-The scripts collect data in batches over a specified timeframe.
-Reddit data is fetched asynchronously using asyncpraw to avoid rate limits.
-Wikipedia and research paper data is retrieved via API or scraping.
-2. Data Processing
-Filters out duplicate or low-relevance entries.
-Standardizes timestamps and formats text for analysis.
-Extracts topics and trends using NLP techniques (TF-IDF, LDA).
-3. Trend Analysis & Visualization
-Identifies emerging AI topics over time.
-Visualizes popularity trends of key terms.
-Generates insights on AI discussions across sources.
-
-# 📌 Installation & Setup
-
-#TODO - fill this
-**Requirements**
-**Running the Collection Scripts** TODO - explain API credentials
-
-# 📈 Future Improvements
-Expand research paper collection to more sources (Google Scholar, IEEE).
-Improve topic modeling and trend detection using deep learning.
-Automate periodic data collection for continuous tracking.
+### 3. **Wikipedia Data Collection (`wikipedia_data.ipynb`)**
+- **Purpose**: Collects Wikipedia pageviews and metadata for AI-related topics using the Wikimedia API.
+- **Details**:
+  - Starts with seed topics like *Artificial Intelligence*, *Machine Learning*, *Deep Learning*, and expands recursively by following internal Wikipedia links.
+  - Metadata collected includes:
+    - `article`: Wikipedia page title.
+    - `date`: Date of recorded pageviews (YYYYMMDD format).
+    - `views`: Number of daily pageviews.
+    - `weekday`: Day of the week for each date.
+    - Additional metadata: Page ID, creation date, last modified date, URL, description, category, and subcategory.
+- **Output**: A CSV file containing daily pageviews and metadata for AI-related topics.
+- 
+## Outputs
+The project generates three main datasets:
+1. **Reddit Dataset**: CSV file with posts from monitored subreddits about AI-related discussions.
+2. **Semantic Scholar Dataset**: CSV file containing metadata for research papers on various AI topics.
+3. **Wikipedia Dataset**: CSV file with daily pageviews and metadata for AI-related Wikipedia pages.
