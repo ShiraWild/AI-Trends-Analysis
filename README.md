@@ -18,7 +18,7 @@ Due to the large size of the data, it has not been uploaded to this Git reposito
 
 ## Visualization - HTML and PNG Files
 
-The visualizations generated during the analysis are too large to be stored in the Git repository. To view the HTML files and visualizations, you can find them in the following Google Drive directory with read-only access:
+The visualizations generated during the analysis are too large to be stored in the Git repository. To view the HTML files and visualizations, you can download them in the following Google Drive directory with read-only access (download & extract zip directory):
 
 [Access the visualizations](https://drive.google.com/drive/folders/1MYEQPo4IRpkbhkLq6mpgN6e5Uv_vWGCS?usp=sharing)
 
