@@ -75,3 +75,12 @@ The project generates three main datasets:
 
 This project was developed with the assistance of AI language models - **ChatGPT** (by OpenAI) and **Claude** (by Anthropic) for providing guidance and support in code writing and structuring.  
 
+## Research Accessibility  
+
+We aim to make this research accessible and useful to researchers and the broader community. To facilitate this, we have:  
+- Provided **open-access data and visualizations** via Google Drive.  
+- Structured the code and datasets to be **easily reproducible**.  
+- Included **detailed documentation** to help researchers understand and utilize our findings.  
+
+There are still many unexplored directions and opportunities for further research in this area. We welcome collaboration and are open to sharing insights and working together on future projects.  
+
