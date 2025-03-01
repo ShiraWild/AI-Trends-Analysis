@@ -70,3 +70,8 @@ The project generates three main datasets:
 2. **Semantic Scholar Dataset**: CSV file containing metadata for research papers on various AI topics.
 3. **Wikipedia Dataset**: CSV file with daily pageviews and metadata for AI-related Wikipedia pages
 4. **Plots & Visualizations:** - all html and png files - plots from datasets analysis to discover AI trends. 
+
+## Acknowledgments  
+
+This project was developed with the assistance of AI language models - **ChatGPT** (by OpenAI) and **Claude** (by Anthropic) for providing guidance and support in code writing and structuring.  
+
